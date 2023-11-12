@@ -25,7 +25,7 @@
       <a class="navbar-brand" href="../index.html">
         <!-- Aca se agrega el logo -->
         <img src="../img/logo.png" class="logo" alt="logo" 
-        style="width: 100px;height: 100px"
+        style="width: 100%; max-width: 300px;height: auto; display: block; margin: 0 auto;"
         />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,8 +49,12 @@
     <div class="container p-5 ">
       <div class="d-sm-flex vertical-center">
       <div class="container text-center text-sm-start">
-      <h1>Esta sera la pagina con todos los datos</h1>
-      <p class="lead my-4">Breve descripcion.</p>
+      <h1>Modelado Epidemiológico de Sarampión, Parotiditis y Tuberculosis para Argentina</h1>
+      <p class="lead my-4" style="text-align: justify;">
+        El modelado matemático es un área que se viene desarrollando hace muchos años en diferentes áreas de la ciencia, como salud, biología, física, bioquímica, etc. Tiene particular importancia dentro de la epidemiología por ser una herramienta que permite analizar y predecir la evolución de las enfermedades, ya sea de manera natural o debido a la intervención de medidas de prevención de la salud como pueden ser las campañas de vacunación.<br>
+        Todo modelo epidemiológico representa al comportamiento de una enfermedad en una población para poder predecir la rapidez de contagio de nuevos sujetos y qué va a ocurrir con la epidemia en el futuro. La herramienta matemática más conocida para el estudio de la propagación de las enfermedades infecciosas son los modelos compartimentales, que consiste en un sistema de ecuaciones diferenciales que divide a la población grupos o subpoblaciones, en nuestro caso: población susceptible, población infectada, población recuperada y población vacunada.<br>
+        El siguiente gráfico interactivo muestra los resultados del modelo simulado para los distintos subgrupos y las tres enfermedades estudiadas. 
+        </p>
   </div>
   </section>
 <!-- End Hero -->
@@ -59,10 +63,6 @@
   <div class="container p-5 ">
 
     <h1>Gráfico Interactivo</h1>
-    <select id="dataSelect1">
-        <option value="datos">Datos Recopilados</option>
-        <option value="ext">Extrapolación del Modelo</option>
-    </select>
     <select id="dataSelect2">
       <option value="sarampion">Sarampión</option>
       <option value="parotiditis">Parotiditis</option>
@@ -115,7 +115,7 @@
   <option value="septiembre">Septiembre</option>
   <option value="octubre">Octubre</option>
   <option value="noviembre">Noviembre</option>
-  <option value="diciembre">Diciembre</option>
+  <option value="diciembre" selected>Diciembre</option>
 </select>
 <label for="ano_fin">Seleccione un año de fin:</label>
 <select id="ano_fin">
@@ -128,12 +128,12 @@
   <option value="2024">2024</option>
   <option value="2025">2025</option>
   <option value="2026">2026</option>
-  <option value="2027">2027</option>
+  <option value="2027" selected>2027</option>
 </select>
     <!--<input type="date" id="startDatePicker" placeholder="Fecha de Inicio">
     <input type="date" id="endDatePicker" placeholder="Fecha de Finalización">-->
-    <input type="radio" name="chartType" value="line" id="lineChart" checked> Línea
-    <input type="radio" name="chartType" value="bar" id="barChart"> Barra
+    <input type="radio" name="chartType" value="line" id="lineChart" > Línea
+    <input type="radio" name="chartType" value="bar" id="barChart" checked> Barra
 
     <canvas id="mychart" width="400" height="200"></canvas>
 </div>  

@@ -12,7 +12,7 @@
     
     <link rel="stylesheet" type="text/css" href="./styles.css">
 
-    <title>Modelado Epidemiologia</title>
+    <title>Modelo Matemático-Epidemiológico</title>
 </head>
 
 <!-- Navbar -->
@@ -23,7 +23,7 @@
       <a class="navbar-brand" href="../index.html">
         <!-- Aca se agrega el logo -->
         <img src="../img/logo.png" class="logo" alt="logo" 
-        style="width: 100px;height: 100px"
+        style="width: 100%; max-width: 300px;height: auto; display: block; margin: 0 auto;"
         />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,12 +46,52 @@
  <section> 
     <div class="container p-5 ">
       <div class="d-sm-flex vertical-center">
-      <div class="container text-center text-sm-start">
-      <h1>En esta pagina pondremos datos acerca de la investigacion</h1>
-      <p class="lead my-4">Tambien de los autores.</p>
-      <button class="btn btn-primary bgpurple btn-large" onclick="window.location.href='Listado./list.html'">
-      Empezar
-      </button>
+      <div class="container text-center text-sm-start" style="text-align: justify;">
+      <h1>Modelado Epidemiológico de Sarampión, Parotiditis y Tuberculosis para Argentina
+      </h1>
+      <p class="lead my-4" style="text-align: justify;">
+        El sarampión, la parotiditis y la tuberculosis son enfermedades infecciosas inmunoprevenibles con vacunas que forman parte del Calendario de Vacunación Nacional. Dada la cantidad de casos en aumento de los últimos años, son enfermedades de gran interés a nivel mundial y regional. Como parte del conjunto de acciones que pueden realizarse para prevenir y controlar contagios, está la investigación epidemiológica. Por este motivo, se buscó simular con un modelo matemático-epidemiológico que parte del modelo SIRV (susceptible-infected-removed-vaccinated) las tres enfermedades, con análisis de datos epidemiológicos públicos mensuales del período enero 2018 a septiembre 2022, para todo el territorio argentino. La investigación fue básica, cuantitativa y retrospectiva. Las ecuaciones diferenciales del modelo obtenido se programaron en lenguaje Python. Como resultado de la investigación, se obtuvo un modelo teórico que funciona para las tres enfermedades, tuberculosis, parotiditis y sarampión; y que al ser entrenado con datos de cada enfermedad particular se obtiene un modelo entrenado por enfermedad que predice la cantidad mensual de susceptibles, infectados, recuperados y vacunados en cualquier momento para el territorio argentino. El modelo y los datos extrapolados están disponibles en el simulador presentado en esta página. En particular, se logró predecir el brote de sarampión de 2019, el aumento de casos de parotiditis de los últimos años y el aumento de casos de tuberculosis en 2019. En cuanto a posibles brotes epidémicos en los próximos años, el modelo predice que, manteniendo el esquema de vacunación actual y las estrategias de APS que se están implementando, no habrá brotes futuros para ninguna de las tres enfermedades estudiadas. Esto se condice con la bibliografía internacional consultada, que sugiere implementar medidas de prevención para cada enfermedad que ya están contempladas en el Calendario Nacional de Vacunación y en las recomendaciones del Ministerio de Salud de Argentina.
+      </p>
+      <p class="lead my-4" style="text-align: justify;">
+        Directora del proyecto: LOPEZ, Miriam Ester. Esp. en Docencia de la Educación Superior, Licenciada en Enfermería, docente de la carrera de Licenciatura en Enfermeria de la UNLaM
+      </p>
+      <p class="lead my-4" style="text-align: justify;">
+        Co-Directora del proyecto: CRUZATE, Patricia Lucia. Docente de la carrera de Licenciatura en Enfermeria de la UNLaM
+      </p>
+      <p class="lead my-4" style="text-align: justify;">
+      Desarrolladores de la página web:<br>
+      CRUZATE, Matias. Estudiante de Ingeniería de la UNLaM y responsable del armado de la página web<br>
+      BENITEZ, Luisana. Colaboradora Externa Encargada del Diseño de la Página Web
+    </p>
+      <p class="lead my-4" style="text-align: justify;">
+        Integrantes del equipo:<br>
+        BALMACEDA, Natalia. Docente de la carrera de Licenciatura en Enfermeria de la UNLaM<br>
+        COLOMBO, Celeste. Docente de la carrera de Licenciatura en Enfermeria de la UNLaM<br>
+        FONTAU, Carlos. Docente de la carrera de Licenciatura en Enfermeria de la UNLaM<br>
+        GONZALEZ, Nadia. Docente de la carrera de Licenciatura en Enfermeria de la UNLaM<br>
+        LIPORACE, Marlene. Docente de la carrera de Licenciatura en Enfermeria de la UNLaM<br>
+        MAMBRIN, Silvina. Docente de la carrera de Licenciatura en Enfermeria de la UNLaM<br>
+        MORENO, Mariela. Docente de la carrera de Licenciatura en Enfermeria de la UNLaM<br>
+        PALERMO, Juan Cruz. Docente de la carrera de Licenciatura en Enfermeria de la UNLaM<br>
+        RAIMONDO, Gonzalo. Docente de la carrera de Licenciatura en Enfermeria de la UNLaM<br>
+        SIROTA, Axel. Matemático, Investigador externo.<br>
+        AULISI, Marianela. Egresada de la carrera de Licenciatura en Enfermería<br>
+        FERNÁNDEZ, Ailén. Egresada de la carrera de Licenciatura en Enfermería, UNLaM<br>
+        PEREYRA, Brenda. Egresada de la carrera de Licenciatura en Enfermería, UNLaM   <br>                                                             
+        DEL CASTILLO, Norma. Becaria de la carrera de Licenciatura en Enfermería, UNLaM  <br>                                                              
+        MOSCOSO, Xoana. Becaria de la carrera de Licenciatura en Enfermería, UNLaM   <br>                                                         
+        MOTTA, Renat. Becaria de la carrera de Licenciatura en Enfermería, UNLaM   <br>                                                    
+        PEDRAZA, Tamara Eliana. Becaria de la carrera de Licenciatura en Enfermería, UNLaM<br>
+      </p>
+      <p class="lead my-4" style="text-align: justify;">
+        Información sobre las vacunas en todas las etapas de la vida. <br>
+      </p>
+      <a href="https://www.argentina.gob.ar/salud/vacunas" target="_blank">Calendario Nacional de Vacunación </a>
+      <p class="lead my-4" style="text-align: justify;">
+      Contacto:<br>
+      pcruzate@unlam.edu.ar <br>
+      mcruzate@alumno.unlam.edu.ar
+      </p>
   </div>
   </section>
   <!-- End Hero --> 
