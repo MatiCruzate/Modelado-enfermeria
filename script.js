@@ -1,92 +1,6 @@
 const data={
-//Datos recopilados
-
- datos:{
-    fechas :['enero 2018','febrero 2018','marzo 2018','abril 2018','mayo 2018','junio 2018','julio 2018','agosto 2018','septiembre 2018','octubre 2018','noviembre 2018','diciembre 2018',
-    'enero 2019','febrero 2019','marzo 2019','abril 2019','mayo 2019','junio 2019','julio 2019','agosto 2019','septiembre 2019','octubre 2019','noviembre 2019','diciembre 2019',
-    'enero 2020','febrero 2020','marzo 2020','abril 2020','mayo 2020','junio 2020','julio 2020','agosto 2020','septiembre 2020','octubre 2020','noviembre 2020','diciembre 2020',
-    'enero 2021','febrero 2021','marzo 2021','abril 2021','mayo 2021','junio 2021','julio 2021','agosto 2021','septiembre 2021','octubre 2021','noviembre 2021','diciembre 2021',
-    'enero 2022','febrero 2022','marzo 2022','abril 2022','mayo 2022','junio 2022','julio 2022','agosto 2022','septiembre 2022','octubre 2022','noviembre 2022','diciembre 2022'],
-   
-    //Sarampion
-sarampion:{
-    infectados : [0, 0, 0, 0, 12, 0, 0, 4, 1, 2, 0, 12, 0, 0, 0, 125, 125, 0, 0, 0, 26, 23, 37, 156, 47, 22, 7, 0, 1, 0, 0, 0, 0, 0, 0, 77, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-    recuperados: [0, 0, 0, 0, 0, 12, 12, 12, 16, 17, 19, 19, 31, 31, 31, 31, 156, 281, 281, 281, 281, 307, 330, 367, 523, 570, 592, 599, 599, 600, 600, 600, 600, 600, 600, 600, 677, 677, 677, 677, 677, 677, 677, 677, 677, 677, 677, 677, 677, 678, 678, 679, 679, 679, 679, 679, 679, 679, 679, 679],
-    vacunados:[
-    47709, 305296, 1083170, 1135346, 1201288, 1246396, 1290940, 1349514, 1426069, 1495251,
-    1550598, 1598040, 1649352, 1714384, 1780542, 1839352, 1899180, 1899180, 1899180, 1899180,
-    1899180, 1899180, 1899180, 1899180, 1899180, 1899180, 1899180, 1899180, 1899180, 1899180,
-    1899180, 1899180, 1899180, 1899180, 1899180, 1899180, 1899180, 1899180, 1899180, 1899180,
-    1899180, 1899180, 1899180, 1899180, 1899180, 1899180, 1899180, 1899180, 1899180, 1899180,
-    1899180, 1899180, 1899180, 2588606, 2646427, 2723299, 2767231, 2812755, 2899480, 2979596,
-    3057221, 3129557, 3199136, 3199136, 3199136, 3199136, 3199136, 3199136, 3199136
-  ],
-    susceptibles:[
-    10973470, 10668174, 9890300, 9838124, 9772170, 9727062, 9682518, 9623940, 9547384, 9478200,
-    9422853, 9375399, 9324087, 9298191, 9232033, 9173098, 9113145, 9066670, 9015368, 8962519,
-    8889190, 8745265, 8646660, 8566351, 8551884, 8574578, 8562433, 8549816, 8537317, 8525626,
-    8515683, 8509986, 8509564, 8509555, 8509547, 8509465, 8509463, 8539649, 8539647, 8539639,
-    8539638, 8539634, 8539633, 8539627, 8488573, 8430752, 8353880, 8309948, 8264423, 8201787,
-    8121670, 8044045, 7971709, 7902130, 7902130, 7902130, 7902130, 7902130, 7902130, 7902129
-  ],
-},
-//Parotiditis
-parotiditis:{
-    infectados : [
-    0, 0, 0, 0, 160, 7, 20, 16, 27, 16, 19, 161, 0, 187, 5, 7, 12, 12, 6, 0, 21, 11, 10, 194,
-    110, 21, 20, 1, 5, 2, 0, 2, 0, 0, 0, 102, 48, 0, 3, 0, 3, 4, 0, 5, 4, 12, 5, 60, 0, 109,
-    0, 104, 15, 8, 4, 37, 9, 2, 0, 0
-  ],
-    recuperados:[
-    0, 0, 0, 0, 0, 160, 167, 187, 203, 230, 246, 265, 426, 426, 613, 618, 625, 637, 649, 655, 655, 676,
-    687, 697, 891, 1001, 1022, 1042, 1043, 1048, 1050, 1050, 1052, 1052, 1052, 1052, 1154, 1202, 1202, 1205, 1205, 
-    1208, 1212, 1212, 1217, 1221, 1233, 1238, 1298, 1298, 1407, 1407, 1511, 1526, 1534, 1538, 1575, 1584, 1586, 1586
-  ],
-    vacunados:[
-    47709, 305296, 1083170, 1135346, 1201288, 1246396, 1290940, 1349514, 1426069, 1495251,
-    1550598, 1598040, 1649352, 1714384, 1780542, 1839352, 1899180, 1945655, 1996957, 2049806,
-    2123109, 2267011, 2365579, 2445732, 2460152, 2472495, 2484633, 2497250, 2509748, 2521439,
-    2531382, 2537079, 2537501, 2537510, 2537518, 2537523, 2537525, 2537530, 2537532, 2537540,
-    2537541, 2537545, 2537546, 2537552, 2588606, 2646427, 2723299, 2767231, 2819828, 2923307,
-    3017579, 3101187, 3185270, 3275771, 3375341, 3480711, 3570068, 3570068, 3570068, 3570068
-  ],
-    susceptibles: [
-    10973470, 10925761, 10668174, 9890300, 9838124, 9772022, 9726907, 9682343, 9623753,
-    9547171, 9477973, 9422607, 9414140, 9362828, 9297609, 9231446, 9172629, 9112789,
-    9066302, 9014994, 8962145, 8888821, 8744908, 8646330, 8601042, 8586512, 8574148,
-    8561990, 8549372, 8536869, 8525176, 8515233, 8509534, 8509112, 8509103, 8509095,
-    8539179, 8539129, 8539124, 8539119, 8539111, 8539107, 8539099, 8539098, 8539087,
-    8488029, 8430196, 8353319, 8333416, 8280819, 8177231, 7999247, 7915149, 7824640,
-    7725066, 7619659, 7530293, 7530291, 7530291
-  ],
-},
-//Tuberculosis
- tuberculosis:{
-    infectados : [
-    0, 0, 0, 0, 0, 0, 0, 12, 9, 0, 0, 42, 0, 0, 0, 214, 0, 239, 425, 656, 640, 902, 680, 5530, 705, 426, 
-    185, 709, 922, 217, 397, 557, 0, 0, 217, 4972, 0, 0, 0, 0, 214, 0, 440, 1041, 1060, 513, 1143, 5602, 0, 0, 275, 619, 682, 402, 604, 946, 1001, 0, 0, 285
-  ],
-    recuperados:[
-    0, 0, 0, 0, 0, 0, 0, 0, 12, 21, 21, 21, 63, 63, 63, 63, 277, 277, 516, 941, 1597, 2237, 3139, 3819, 9349, 
-    10054, 10480, 10665, 11374, 12296, 12513, 12910, 13467, 13467, 13467, 13684, 18656, 18656, 18656, 18656, 18656, 18870, 18870, 
-    19310, 20351, 21411, 21924, 23067, 28669, 28669, 28669, 28944, 29563, 30245, 30647, 31251, 32197, 33198, 33198, 33198
-  ],
-    vacunados:[
-    15570, 28934, 44634, 58969, 73291, 86743, 100241, 115193, 129360, 143373, 156177, 168803, 183002, 196231, 210836, 225047, 239219,
-    252401, 265869, 278657, 290949, 302205, 312738, 325151, 337795, 348035, 356103, 363258, 371199, 379825, 388243, 396057, 404186, 
-    410900, 417598, 424590, 432785, 440973, 449883, 458257, 465729, 472710, 479292, 484945, 495543, 505898, 516191, 526432, 542825, 
-    558972, 578424, 597211, 616783, 635388, 654601, 672356, 687249, 687249, 687249, 687249
-  ],
-    susceptibles:[
-    44494502, 44465568, 44449868, 44435533, 44421211, 44407759, 44394261, 44379297, 44365121, 44351108, 44338304, 44325636, 44311437,
-    44742418, 44727813, 44713388, 44699216, 44685795, 44671902, 44658658, 44645526, 44633368, 44622155, 44604812, 44590863, 45018248,
-    45009995, 45002131, 44993268, 44984425, 44975610, 44967239, 44959110, 44952496, 44945481, 44933517, 44925322, 44349118, 44340208,
-    44331834, 44324148, 44317167, 44310345, 44299193, 44280925, 44280925, 44280925, 44514098
-  ],
-},
-},
 //Datos extrapolados
- ext:{
+ datos:{
     fechas:['enero 2018','febrero 2018','marzo 2018','abril 2018','mayo 2018','junio 2018','julio 2018','agosto 2018','septiembre 2018','octubre 2018','noviembre 2018','diciembre 2018',
     'enero 2019','febrero 2019','marzo 2019','abril 2019','mayo 2019','junio 2019','julio 2019','agosto 2019','septiembre 2019','octubre 2019','noviembre 2019','diciembre 2019',
     'enero 2020','febrero 2020','marzo 2020','abril 2020','mayo 2020','junio 2020','julio 2020','agosto 2020','septiembre 2020','octubre 2020','noviembre 2020','diciembre 2020',
@@ -307,18 +221,19 @@ tuberculosis:{
 
 //Ahora hacemos un codigo para seleccionar los datos y el tipo de grafico
 let currentData = 'data.datos.sarampion.infectados';
-let currentChartType = 'line';
+let currentChartType = 'bar';
 
 var ctx = document.getElementById('mychart').getContext('2d');
 
 var chart = new Chart(ctx, {
-    type: 'line',
+    type: 'bar',
     data: {
         labels: data.datos.fechas,
         datasets: [{
             label: 'Infectados Sarampion',
             data: data.datos.sarampion.infectados,
-            borderColor: 'rgba(75, 192, 192, 1)',
+            borderColor: 'rgba(255, 102, 153, 1)',
+            backgroundColor: 'rgba(255, 182, 193, 0.6)',
             borderWidth: 1,
             fill: false
         }]
@@ -333,7 +248,6 @@ var chart = new Chart(ctx, {
 });
 function updateChart() {
     chart.destroy(); // Destruir el gráfico actual
-    var selectedData1 = document.getElementById('dataSelect1').value;
     var selectedData2 = document.getElementById('dataSelect2').value;
     var selectedData3 = document.getElementById('dataSelect3').value;
     // Obtener las fechas de inicio y finalización en formato de mes y año
@@ -346,16 +260,16 @@ function updateChart() {
     var endDate = endMonth + ' ' + endYear;
     var selectedChartType = document.querySelector('input[name="chartType"]:checked').value;
 
-            var filteredData = data[selectedData1][selectedData2][selectedData3];
-            var filteredLabels = data[selectedData1].fechas;
+            var filteredData = data.datos[selectedData2][selectedData3];
+            var filteredLabels = data.datos.fechas;
             // Realizar la filtración con fechas
     if (startDate && endDate) {
         var startIndex = findIndexByDate(filteredLabels, startDate);
         var endIndex = findIndexByDate(filteredLabels, endDate);
 
         if (startIndex >= 0 && endIndex >= 0) {
-            filteredData = data[selectedData1][selectedData2][selectedData3].slice(startIndex, endIndex + 1);
-            filteredLabels = data[selectedData1].fechas.slice(startIndex, endIndex + 1);
+            filteredData = data.datos[selectedData2][selectedData3].slice(startIndex, endIndex + 1);
+            filteredLabels = data.datos.fechas.slice(startIndex, endIndex + 1);
         }
     }
     var newData = {
@@ -363,8 +277,8 @@ function updateChart() {
                 datasets: [{
                     label: filteredLabels,
                     data: filteredData,
-                    borderColor: selectedChartType === 'line' ? 'rgba(75, 192, 192, 1)' : 'rgba(75, 192, 192, 0.6)',
-                    backgroundColor: selectedChartType === 'bar' ? 'rgba(75, 192, 192, 0.6)' : 'rgba(0, 0, 0, 0)',
+                    borderColor: selectedChartType === 'line' ? 'rgba(255, 102, 153, 1)' : 'rgba(255, 102, 153, 0.6)',
+                    backgroundColor: selectedChartType === 'bar' ? 'rgba(255, 182, 193, 0.6)' : 'rgba(0, 0, 0, 0)',
                     borderWidth: 1,
                     fill: selectedChartType === 'line' ? false : true
                 }]
@@ -383,7 +297,6 @@ function updateChart() {
             });
         };
 
-        document.getElementById('dataSelect1').addEventListener('change', updateChart);
         document.getElementById('dataSelect2').addEventListener('change', updateChart);
         document.getElementById('dataSelect3').addEventListener('change', updateChart);
         document.getElementById('mes_inicio').addEventListener('change', updateChart);
